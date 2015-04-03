@@ -121,7 +121,7 @@ class Document(BaseLaTeXContainer):
 
         self.generate_tex(filename)
 
-        command = compiler + ' --jobname="' + filename + '" "' + \
+        command = compiler + ' --jobname="' + os.path.split(filename)[1] + '" "' + \
             filename + '.tex"'
 
         subprocess.check_call(command, shell=True)
