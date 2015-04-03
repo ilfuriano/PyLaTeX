@@ -170,7 +170,7 @@ if sys.version_info[:2] <= (2, 6):
 if sys.version_info[0] == 3:
     source_dir = '.'
 else:
-    source_dir = 'python2_source'
+    source_dir = '.'
 
 extras = {
     'matrices': ['numpy'],
